@@ -15,7 +15,7 @@ dag = DAG(
     'etl_oracle_service',
     default_args=default_args,
     description='DAG to run Oracle stored procedure galaxy_ai.prc_etl_service every day at 2:00 AM',
-    schedule_interval='0 2 * * *',
+    schedule='0 2 * * *',
     catchup=False,
 )
 
