@@ -61,6 +61,7 @@ for task_id, procedure_name in [
     ('mv_client_error_task', 'galaxy_ai.prc_mv_client_error'),
     ('mv_daily_error_task', 'galaxy_ai.prc_mv_daily_error'),
     ('mv_daily_status_task', 'galaxy_ai.prc_mv_daily_status'),
+    ('SP_INSERT_TO_olap_CICS_task', 'galaxy_aux.SP_INSERT_TO_olap_CICS'),
     ('SP_INSERT_TO_olap_sum2_task', 'galaxy_aux.SP_INSERT_TO_olap_sum2')
 ]:
     task = OracleStoredProcedureOperator(
